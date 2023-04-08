@@ -1,0 +1,5 @@
+The wordcount of redact_names:2783
+The wordcount of redact_dates:2788
+The wordcount of redact_phone_numbers:2772
+The wordcount of redact_genders:2771
+The wordcount of redact_address:2717
