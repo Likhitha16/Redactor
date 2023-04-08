@@ -89,3 +89,6 @@ test_redact_dates.py
 The functionality of redact ideas is tested using the test_redact_concept.py method. If at least 1 word (concept-relevant word) is obscured, the statement is true.
 
 Go to the tests folder and perform pipenv run python -m pytest to run test cases.
+
+![](https://github.com/cs5293sp23-project1/ezgif.com-video-to-gif.gif)
+
