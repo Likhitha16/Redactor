@@ -90,4 +90,23 @@ The functionality of redact ideas is tested using the test_redact_concept.py met
 
 Go to the tests folder and perform pipenv run python -m pytest to run test cases.
 
+<b> Bugs and Assumptions </b>
+When redacting text that contains sensitive information such as dates, phone numbers, and addresses, it is important to keep in mind some potential bugs and assumptions that may arise:
+
+Regular Expressions (RegEx) Limitations: One common method of redaction is using regular expressions to identify and replace patterns in the text. However, regular expressions can have limitations and may not always capture every possible variation of the sensitive information. For example, a regular expression that matches a standard US phone number format may not capture international phone numbers or alternative phone number formats.
+
+Contextual Ambiguity: Sometimes, the sensitive information may be ambiguous in its context, making it difficult to determine what to redact. For example, a string of numbers may represent either a phone number or a social security number. In such cases, it is important to consider the surrounding text and other contextual clues to make an informed decision about what to redact.
+
+Data Loss: Redacting sensitive information can lead to unintentional data loss, where information that should not be redacted is inadvertently removed. For example, if an address contains a key identifier such as a building number, it may be important to retain this information for the intended recipient of the redacted text.
+
+Inconsistencies: Sometimes, the sensitive information may be inconsistent in its format or structure, making it challenging to accurately redact. For example, a date may be written in different formats such as "04/25/2023" or "April 25, 2023". Similarly, addresses may be written in different formats depending on the location and cultural conventions.
+
+False Sense of Security: Redacting sensitive information may give the impression that the text is now safe to share, when in fact the redaction may be reversible using advanced techniques such as forensic analysis. Therefore, it is important to consider the sensitivity of the information being shared and the potential risks of sharing redacted text.
+
+To avoid these potential issues, it is recommended to use a combination of techniques such as automated redaction tools, manual verification, and expert review to ensure accurate and secure redaction of sensitive information.
+
+
+
+
+
 https://github.com/Likhitha16/cs5293sp23-project1/blob/main/ezgif.com-video-to-gif.gif
